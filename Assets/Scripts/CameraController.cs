@@ -22,7 +22,7 @@ public class CameraController : MonoBehaviour {
 
     
     void FixedUpdate() {
-        Vector3 _playerForward = (playerRb.velocity + playerCar.transform.forward).normalized;
+        Vector3 _playerForward = (playerCar.transform.forward).normalized;
 
         transform.position = Vector3.Lerp(
             transform.position,
