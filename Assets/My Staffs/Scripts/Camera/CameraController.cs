@@ -27,6 +27,7 @@ public class CameraController : MonoBehaviour {
         transform.position = Vector3.Lerp(
             transform.position,
             playerCar.position + playerCar.transform.TransformVector(offset) + _playerForward * (-5.5f),
+            // playerCar.position + offset + _playerForward * (-5.5f),
             cameraSpeed * Time.deltaTime
         );
         
